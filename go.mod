@@ -1,4 +1,4 @@
-module github.com/BitCannaGlobal/bcna
+module github.com/RaulBernal/bcna
 
 go 1.15
 
