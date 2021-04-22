@@ -215,10 +215,10 @@ func (m *QueryAllBitcannaidResponse) GetPagination() *query.PageResponse {
 }
 
 func init() {
-	proto.RegisterType((*QueryGetBitcannaidRequest)(nil), "BitCannaGlobal.bcna.bcna.QueryGetBitcannaidRequest")
-	proto.RegisterType((*QueryGetBitcannaidResponse)(nil), "BitCannaGlobal.bcna.bcna.QueryGetBitcannaidResponse")
-	proto.RegisterType((*QueryAllBitcannaidRequest)(nil), "BitCannaGlobal.bcna.bcna.QueryAllBitcannaidRequest")
-	proto.RegisterType((*QueryAllBitcannaidResponse)(nil), "BitCannaGlobal.bcna.bcna.QueryAllBitcannaidResponse")
+	proto.RegisterType((*QueryGetBitcannaidRequest)(nil), "RaulBernal.bcna.bcna.QueryGetBitcannaidRequest")
+	proto.RegisterType((*QueryGetBitcannaidResponse)(nil), "RaulBernal.bcna.bcna.QueryGetBitcannaidResponse")
+	proto.RegisterType((*QueryAllBitcannaidRequest)(nil), "RaulBernal.bcna.bcna.QueryAllBitcannaidRequest")
+	proto.RegisterType((*QueryAllBitcannaidResponse)(nil), "RaulBernal.bcna.bcna.QueryAllBitcannaidResponse")
 }
 
 func init() { proto.RegisterFile("bcna/query.proto", fileDescriptor_be73ff6631d32de0) }
@@ -280,7 +280,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Bitcannaid(ctx context.Context, in *QueryGetBitcannaidRequest, opts ...grpc.CallOption) (*QueryGetBitcannaidResponse, error) {
 	out := new(QueryGetBitcannaidResponse)
-	err := c.cc.Invoke(ctx, "/BitCannaGlobal.bcna.bcna.Query/Bitcannaid", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RaulBernal.bcna.bcna.Query/Bitcannaid", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -289,7 +289,7 @@ func (c *queryClient) Bitcannaid(ctx context.Context, in *QueryGetBitcannaidRequ
 
 func (c *queryClient) BitcannaidAll(ctx context.Context, in *QueryAllBitcannaidRequest, opts ...grpc.CallOption) (*QueryAllBitcannaidResponse, error) {
 	out := new(QueryAllBitcannaidResponse)
-	err := c.cc.Invoke(ctx, "/BitCannaGlobal.bcna.bcna.Query/BitcannaidAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RaulBernal.bcna.bcna.Query/BitcannaidAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -328,7 +328,7 @@ func _Query_Bitcannaid_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/BitCannaGlobal.bcna.bcna.Query/Bitcannaid",
+		FullMethod: "/RaulBernal.bcna.bcna.Query/Bitcannaid",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Bitcannaid(ctx, req.(*QueryGetBitcannaidRequest))
@@ -346,7 +346,7 @@ func _Query_BitcannaidAll_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/BitCannaGlobal.bcna.bcna.Query/BitcannaidAll",
+		FullMethod: "/RaulBernal.bcna.bcna.Query/BitcannaidAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).BitcannaidAll(ctx, req.(*QueryAllBitcannaidRequest))
@@ -355,7 +355,7 @@ func _Query_BitcannaidAll_Handler(srv interface{}, ctx context.Context, dec func
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "BitCannaGlobal.bcna.bcna.Query",
+	ServiceName: "RaulBernal.bcna.bcna.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

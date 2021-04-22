@@ -92,7 +92,7 @@ func (m *Bitcannaid) GetAddress() string {
 }
 
 func init() {
-	proto.RegisterType((*Bitcannaid)(nil), "BitCannaGlobal.bcna.bcna.Bitcannaid")
+	proto.RegisterType((*Bitcannaid)(nil), "RaulBernal.bcna.bcna.Bitcannaid")
 }
 
 func init() { proto.RegisterFile("bcna/bitcannaid.proto", fileDescriptor_4b4053733ed2336d) }

@@ -69,7 +69,7 @@ func (m *GenesisState) GetBitcannaidList() []*Bitcannaid {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "BitCannaGlobal.bcna.bcna.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "RaulBernal.bcna.bcna.GenesisState")
 }
 
 func init() { proto.RegisterFile("bcna/genesis.proto", fileDescriptor_a0474e07bc9bd608) }

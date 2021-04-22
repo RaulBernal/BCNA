@@ -325,12 +325,12 @@ func (m *MsgDeleteBitcannaidResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgDeleteBitcannaidResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgCreateBitcannaid)(nil), "BitCannaGlobal.bcna.bcna.MsgCreateBitcannaid")
-	proto.RegisterType((*MsgCreateBitcannaidResponse)(nil), "BitCannaGlobal.bcna.bcna.MsgCreateBitcannaidResponse")
-	proto.RegisterType((*MsgUpdateBitcannaid)(nil), "BitCannaGlobal.bcna.bcna.MsgUpdateBitcannaid")
-	proto.RegisterType((*MsgUpdateBitcannaidResponse)(nil), "BitCannaGlobal.bcna.bcna.MsgUpdateBitcannaidResponse")
-	proto.RegisterType((*MsgDeleteBitcannaid)(nil), "BitCannaGlobal.bcna.bcna.MsgDeleteBitcannaid")
-	proto.RegisterType((*MsgDeleteBitcannaidResponse)(nil), "BitCannaGlobal.bcna.bcna.MsgDeleteBitcannaidResponse")
+	proto.RegisterType((*MsgCreateBitcannaid)(nil), "RaulBernal.bcna.bcna.MsgCreateBitcannaid")
+	proto.RegisterType((*MsgCreateBitcannaidResponse)(nil), "RaulBernal.bcna.bcna.MsgCreateBitcannaidResponse")
+	proto.RegisterType((*MsgUpdateBitcannaid)(nil), "RaulBernal.bcna.bcna.MsgUpdateBitcannaid")
+	proto.RegisterType((*MsgUpdateBitcannaidResponse)(nil), "RaulBernal.bcna.bcna.MsgUpdateBitcannaidResponse")
+	proto.RegisterType((*MsgDeleteBitcannaid)(nil), "RaulBernal.bcna.bcna.MsgDeleteBitcannaid")
+	proto.RegisterType((*MsgDeleteBitcannaidResponse)(nil), "RaulBernal.bcna.bcna.MsgDeleteBitcannaidResponse")
 }
 
 func init() { proto.RegisterFile("bcna/tx.proto", fileDescriptor_12d2bc8ae8552a21) }
@@ -388,7 +388,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreateBitcannaid(ctx context.Context, in *MsgCreateBitcannaid, opts ...grpc.CallOption) (*MsgCreateBitcannaidResponse, error) {
 	out := new(MsgCreateBitcannaidResponse)
-	err := c.cc.Invoke(ctx, "/BitCannaGlobal.bcna.bcna.Msg/CreateBitcannaid", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RaulBernal.bcna.bcna.Msg/CreateBitcannaid", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -397,7 +397,7 @@ func (c *msgClient) CreateBitcannaid(ctx context.Context, in *MsgCreateBitcannai
 
 func (c *msgClient) UpdateBitcannaid(ctx context.Context, in *MsgUpdateBitcannaid, opts ...grpc.CallOption) (*MsgUpdateBitcannaidResponse, error) {
 	out := new(MsgUpdateBitcannaidResponse)
-	err := c.cc.Invoke(ctx, "/BitCannaGlobal.bcna.bcna.Msg/UpdateBitcannaid", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RaulBernal.bcna.bcna.Msg/UpdateBitcannaid", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -406,7 +406,7 @@ func (c *msgClient) UpdateBitcannaid(ctx context.Context, in *MsgUpdateBitcannai
 
 func (c *msgClient) DeleteBitcannaid(ctx context.Context, in *MsgDeleteBitcannaid, opts ...grpc.CallOption) (*MsgDeleteBitcannaidResponse, error) {
 	out := new(MsgDeleteBitcannaidResponse)
-	err := c.cc.Invoke(ctx, "/BitCannaGlobal.bcna.bcna.Msg/DeleteBitcannaid", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/RaulBernal.bcna.bcna.Msg/DeleteBitcannaid", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -449,7 +449,7 @@ func _Msg_CreateBitcannaid_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/BitCannaGlobal.bcna.bcna.Msg/CreateBitcannaid",
+		FullMethod: "/RaulBernal.bcna.bcna.Msg/CreateBitcannaid",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreateBitcannaid(ctx, req.(*MsgCreateBitcannaid))
@@ -467,7 +467,7 @@ func _Msg_UpdateBitcannaid_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/BitCannaGlobal.bcna.bcna.Msg/UpdateBitcannaid",
+		FullMethod: "/RaulBernal.bcna.bcna.Msg/UpdateBitcannaid",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateBitcannaid(ctx, req.(*MsgUpdateBitcannaid))
@@ -485,7 +485,7 @@ func _Msg_DeleteBitcannaid_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/BitCannaGlobal.bcna.bcna.Msg/DeleteBitcannaid",
+		FullMethod: "/RaulBernal.bcna.bcna.Msg/DeleteBitcannaid",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).DeleteBitcannaid(ctx, req.(*MsgDeleteBitcannaid))
@@ -494,7 +494,7 @@ func _Msg_DeleteBitcannaid_Handler(srv interface{}, ctx context.Context, dec fun
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "BitCannaGlobal.bcna.bcna.Msg",
+	ServiceName: "RaulBernal.bcna.bcna.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/BitCannaGlobal/bcna/app/params"
+	"github.com/RaulBernal/bcna/app/params"
 	"github.com/cosmos/cosmos-sdk/std"
 )
 
