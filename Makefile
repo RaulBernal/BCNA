@@ -99,7 +99,9 @@ BUILD_TARGETS := build install
 build: BUILD_ARGS=-o $(BUILDDIR)/
 
 $(BUILD_TARGETS): go.sum $(BUILDDIR)/
-	go $@ -mod=readonly $(BUILD_FLAGS) $(BUILD_ARGS) ./...
+	#go $@ -mod=readonly $(BUILD_FLAGS) $(BUILD_ARGS) ./... don't overwrite go.sum
+	go $@ $(BUILD_FLAGS) $(BUILD_ARGS) ./...
+
 
 $(BUILDDIR)/:
 	mkdir -p $(BUILDDIR)/
